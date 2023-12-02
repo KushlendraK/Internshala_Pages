@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Internships | Register Page </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function check() {
+			var a = document.f1.first.value;
+			var b = document.f1.last.value;
+			var c = document.f1.email.value;
+			var d = document.f1.pass.value;
+
+			if (a == "") {
+				alert("Please enter first name");
+				document.f1.first.focus();
+				return false;
+			}
+			if (b == "") {
+				alert("Please enter last name");
+				document.f1.last.focus();
+				return false;
+			}
+			if (c == "") {
+				alert("Please enter email ID");
+				document.f1.email.focus();
+				return false;
+			}
+			if (d == "") {
+				alert("Please enter password");
+				document.f1.pass.focus();
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<!-- navbar creation -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-1 mb-lg-0">
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle mt-1" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Internship
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item nav_link" href="#">Computer Science Internship</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Marketing internship</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Finance Internship</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Mechanical Internship</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Electronic Internship</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Civil Internship</a></li>
+								<li><a class="dropdown-item nav_link" href="internship.html"><b>View all
+											Internship</b></a></li>
+							</ul>
+						</li>
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle mt-1" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Summer Trainings<img src="img/offer.png" class="offer">
+							</a>
+							<ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item nav_link" href="#">Web Development</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Digital Marketing</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Android App Development</a></li>
+								<li><a class="dropdown-item nav_link" href="#">AutoCAD</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Machine Learning</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Data Science</a></li>
+								<li><a class="dropdown-item nav_link" href="#"><b>View all Training</b></a></li>
+
+
+							</ul>
+						</li>
+						<li class="nav-item dropdown nav_link">
+							<a class="nav-link dropdown-toggle mt-1 " href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Jobs
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item nav_link" href="#">Fresher Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Marketing Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Content Writing Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Computer Science Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#">HR Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#">Finance Job</a></li>
+								<li><a class="dropdown-item nav_link" href="#"><b>View all Job</b></a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" style="border-radius: 10px;" type="search" placeholder="Search"
+							aria-label="Search">
+						<button class="btn btn-outline-primary" style="border-radius: 10px;"
+							type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Register Section Part -->
+	<div class="container-fluid" style="background-color: #f7fafa;">
+		<div class="row">
+			<!-- left side  column-->
+			<div class="col-sm-12 col-md-12 col-lg-8"> <!-- banner image column left side-->
+				<img src="img/login_page_image.png" class="mt-2" style="width:100%; height:100%">
+			</div>
+			<!-- right side column-->
+			<div class="col-sm-12 col-md-12 col-lg-4 mt-4 register_hover">
+				<div class="row mt-4 mx-2 border " style="border-radius: 5px;">
+					<div class="col text-center mt-2" style="height: 30px;"><img src="img/google.png" class="mx-2"
+							style="width:20px; height: 20px;">Sign Up with google</div>
+
+				</div>
+				<div class="row mt-1">
+					<div class="col-5">
+						<hr style="height:2px;">
+					</div>
+					<div class="col-2 mt-1 text-center">
+						OR
+					</div>
+					<div class="col-5">
+						<hr style="height:2px;">
+					</div>
+				</div>
+				<form name="f1">
+					<div class="row my-2">
+						<div class="col mt-1">
+
+							<!-- <div class="col-6"> -->
+							<div class="form-row">
+								<!-- <div class="form-group col-md-3"> -->
+								<label for="inputPassword4">First Name</label>
+								<input type="text" class="form-control" id="inputPassword4" name="first"
+									placeholder="Kushendra">
+							</div>
+
+						</div>
+						<div class="col-6">
+
+							<label for="inputPassword4">Last Name</label>
+							<input type="text" class="form-control" id="inputPassword4" name="last"
+								placeholder="Kushwaha">
+							<!-- </div> -->
+
+						</div>
+						<div class="row mt-3">
+
+							<div class="form-row">
+								<div class="form-group ">
+									<label for="inputEmail4">Email</label>
+									<input type="email" class="form-control" id="inputEmail4" name="email"
+										placeholder="Email">
+								</div>
+							</div>
+
+
+						</div>
+						<div class="row mt-3">
+
+							<div class="form-row">
+								<div class="form-group ">
+									<label for="inputPassword4">Password</label>
+									<input type="password" class="form-control" id="inputPassword4" name="pass"
+										placeholder="Password">
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="row mt-1">
+						<div class="col d-flex justify-content-start terms">By signing up, you agree to our<a href="#">
+								Terms and Conditions.</a></div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-1"></div>
+						<div class="col-10">
+							<form name="f5"><button class="btn btn-primary text-center " name="sign"
+									onclick="return check();" style="width:100%">Sign Up</button></form>
+						</div>
+						<div class="col-1"></div>
+				</form>
+				<div class="row text-center my-3">
+					<div class="col">
+						Already registered? <a href="login.html" style="text-decoration: none;">Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</nav>
+		<div class="container-fluid footer mt-5 footer_bg">
+			<div class="row mx-3 my-4 font_intern">
+				<div class="col-sm-6 col-md-4 col-lg-3 my-4 intern_font">
+					<div class="row  footer_head1">Internships by places </div>
+					<div class="row mt-4 ">Internship in India</div>
+					<div class="row my-2">Internship in Delhi</div>
+					<div class="row my-2">Internship in Banglore</div>
+					<div class="row my-2">Internship in Hyderabad</div>
+					<div class="row my-2">Internship in Mumbai</div>
+					<div class="row my-2">Internship in Chennai</div>
+					<div class="row my-2">Internship in Gurgaon</div>
+					<div class="row my-2">Internship in Kolkata</div>
+					<div class="row my-2">Virtual Intenship</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3  my-4">
+					<div class="row footer_head1 ">Internships by Stream </div>
+					<div class="row mt-4">Computer Science Internshipa</div>
+					<div class="row my-2">Electronics Internship</div>
+					<div class="row my-2">Mechanical Internship</div>
+					<div class="row my-2">Civil Internship</div>
+					<div class="row my-2">Marketing Internship</div>
+					<div class="row my-2">Chemical Internship</div>
+					<div class="row my-2">Finance Internship</div>
+					<div class="row my-2">Summer Research Fellowship</div>
+					<div class="row my-2">Campus Ambassador Program</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3  my-4">
+					<div class="row footer_head1 ">Jobs by places</div>
+					<div class="row mt-4">Jobs in Delhi</div>
+					<div class="row my-2">Jobs in Mumbai</div>
+					<div class="row my-2">Jobs in Bangalore</div>
+					<div class="row my-2">Jobs in Jaipur</div>
+					<div class="row my-2">Jobs in Kolkata</div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3  my-4">
+					<div class="row footer_head1 ">Jobs by Stream </div>
+					<div class="row mt-4">Marketing jobs</div>
+					<div class="row my-2">Content writing jobs</div>
+					<div class="row my-2">Web development jobs</div>
+					<div class="row my-2">Sales jobs</div>
+					<div class="row my-2">Finance jobs</div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+					<div class="row my-2"></div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3  my-4">
+					<div class="row footer_head1 ">Online Trainings</div>
+					<div class="row mt-4">Programming with Python</div>
+					<div class="row my-2">Digital Marketing</div>
+					<div class="row my-2">Web Development</div>
+					<div class="row my-2">Machine Learning</div>
+					<div class="row my-2">Advanced Excel</div>
+					<div class="row my-2">Ethical Hacking</div>
+					<div class="row my-2">AutoCAD</div>
+					<div class="row my-2">Creative Writing</div>
+					<div class="row my-2">Data Science</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+
+		<div class="container-fluid footer_bg" style="margin-top:-18px;">
+			<div class="row" style="margin-left:18px;">
+				<div class="col-sm-6 col-md-3 col-lg-2 mt-4">
+					<div class="row my-2"><a href="about.html"
+							style="text-decoration:none; color: white; margin-left: -10px;">About Us</a></div>
+					<div class="row my-2">We're hiring</div>
+					<div class="row my-2">Hire interns for your company</div>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-2 mt-4">
+					<div class="row my-2">Team Diary</div>
+					<div class="row my-2">Blog</div>
+					<div class="row my-2">Services</div>
+
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-2 mt-4">
+					<div class="row my-2">Terms and conditions</div>
+					<div class="row my-2">Privacy</div>
+					<div class="row my-2">Contact us</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-sm-1 col-md-1 col-lg-2 border  mt-3 playstore" style="margin-left: 25px;">Get Android
+					App
+					<img src="img/play_logo.png" class="mt-1" style="width:30px; height: 30px; border-radius: 10px;">
+				</div>
+
+				<div class="col-sm-1 col-md-3 col-lg-2">
+					<img src="img/insta1.png" class="insta_icon">
+					<img src="img/fb1.png" class=" fb_icon"> <img src="img/twitter2.png" class=" twitter_icon">
+					<img src="img/yout.png" class="youtube_icon">
+				</div>
+
+			</div>
+
+			<div class="col text-center mt-3">&copy Copyright 2022 Internshala</div>
+		</div>
+</body>
+
+</html>
